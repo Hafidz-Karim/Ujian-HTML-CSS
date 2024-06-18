@@ -15,8 +15,8 @@
   color: whitesmoke;
 }
 .header > button {
-  background-color: orange;
-  padding: 10px;
+  background-color: rgb(252, 174, 27);
+  padding: 0px 15px;
   border-radius: 18px;
   border: none;
   color: white;
@@ -45,6 +45,7 @@
 .materi div {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .product {
   padding: 0px 20px;
@@ -86,9 +87,9 @@
   color: white;
 }
 .teks-sulitan {
-  text-align: center;
+  /* text-align: center; */
   color: white;
-  padding: 10px;
+  padding: 50px 10px 0px 10px;
 }
 .bungkus-aset {
   display: flex;
@@ -107,12 +108,22 @@
   border-radius: 10px;
   margin: 20px 20px 0px 20px;
 }
+.container-1-aset img {
+  width: 26%;
+}
+.container-2-aset img {
+  width: 20%;
+  margin-top: 15px;
+}
 .div-akhir {
   text-align: center;
   color: white;
   padding: 0px;
   display: flex;
   flex-direction: column;
+}
+.div-akhir .icon {
+  padding-bottom: 20px;
 }
 footer {
   text-align: center;
@@ -141,7 +152,7 @@ footer {
     display: flex;
     text-align: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
   }
   .product {
     display: flex;
@@ -181,25 +192,33 @@ footer {
     justify-content: center;
     height: 100%;
   }
+  
   .container-1-aset {
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px 100px 10px 0px;
     justify-content: flex-start;
-    height: 30%;
+    height: 100%;
+  }
+  .container-1-aset img {
+    height: 100%;
+    width: 50%;
   }
   .container-2-aset {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 100px 10px 20px;
+    padding: 10px 100px 10px 0px;
     justify-content: flex-start;
-    height: 40%;
-  }
-  .container-2-aset > div {
     height: 100%;
-    width: 100%;
+  }
+  .container-2-aset .telegram {
+    width: 21%;
+  }
+  .container-2-aset img {
+    height: 100%;
+    width: 50%;
   }
 
   .teks-sulitan {
@@ -207,7 +226,7 @@ footer {
     margin-bottom: 50px;
   }
   .div-akhir {
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     width: 100%;
     height: 100%;
@@ -218,5 +237,7 @@ footer {
   }
   .div-akhir .taks {
     justify-content: flex-start;
+    padding-top: 40px;
+    width: 37%;
   }
 }
